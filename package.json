@@ -1,6 +1,6 @@
 {
   "name": "csv-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TSV/CSV Embed in YAML",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
@@ -14,7 +14,8 @@
     "lint": "run-s lint:*",
     "lint:eslint": "eslint . --ext .ts,.tsx --fix",
     "lint:prettier": "prettier --write .",
-    "prepare": "simple-git-hooks"
+    "prepare": "if type simple-git-hooks; then simple-git-hooks; fi",
+    "prepublishOnly": "run-p build:*"
   },
   "simple-git-hooks": {
     "pre-commit": "npm test && npm run lint"
@@ -33,9 +34,11 @@
     "url": "git+https://github.com/masaharu-kato/csv-ts.git"
   },
   "keywords": [
-    "YAML",
     "TSV",
-    "CSV"
+    "CSV",
+    "typescript",
+    "parser",
+    "data"
   ],
   "author": "Masaharu Kato",
   "license": "ISC",
