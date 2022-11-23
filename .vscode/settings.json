@@ -1,0 +1,20 @@
+{
+  // Lint by eslint on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  // Set prettier to a default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Format on save
+  "editor.formatOnSave": true,
+  // Set tab size to 2
+  "editor.tabSize": 2,
+  // Use spaces as tab
+  "editor.insertSpaces": true,
+  // Use LF as EOL
+  "files.eol": "\n",
+  // Insert a final new line
+  "files.insertFinalNewline": true,
+  // Force the extention recommendations
+  "extensions.ignoreRecommendations": false
+}
