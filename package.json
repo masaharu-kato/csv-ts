@@ -14,7 +14,8 @@
     "lint": "run-s lint:*",
     "lint:eslint": "eslint . --ext .ts,.tsx --fix",
     "lint:prettier": "prettier --write .",
-    "prepare": "simple-git-hooks"
+    "prepare": "if type simple-git-hooks; then simple-git-hooks; fi",
+    "prepublishOnly": "run-p build:*"
   },
   "simple-git-hooks": {
     "pre-commit": "npm test && npm run lint"
