@@ -34,9 +34,11 @@
     "url": "git+https://github.com/masaharu-kato/csv-ts.git"
   },
   "keywords": [
-    "YAML",
     "TSV",
-    "CSV"
+    "CSV",
+    "typescript",
+    "parser",
+    "data"
   ],
   "author": "Masaharu Kato",
   "license": "ISC",
